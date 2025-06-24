@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2144462d-48d8-4589-85d9-072d63d3bdce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/contracts/FactoryProxy.sol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="2144462d-48d8-4589-85d9-072d63d3bdce" name="Changes" comment="initial folder structure">
+      <change afterPath="$PROJECT_DIR$/scripts/deploy-upgradeable-factory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/upgrade-project.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/CarbonCalculation.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/FactoryImplementation.sol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/CarbonCreditToken.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/ProjectImplementation.sol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contracts/ProjectRegistry.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/MainManager.sol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hardhat.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/hardhat.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Solidity Contract" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -68,6 +65,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\deste\\AppData\\Local\\Programs\\IntelliJ IDEA Ultimate\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -88,9 +86,22 @@
       <updated>1750602535595</updated>
       <workItem from="1750602536725" duration="2403000" />
     </task>
+    <task id="LOCAL-00001" summary="initial folder structure">
+      <option name="closed" value="true" />
+      <created>1750786143463</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1750786143464</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial folder structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial folder structure" />
   </component>
 </project>
