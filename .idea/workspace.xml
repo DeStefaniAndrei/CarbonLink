@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2144462d-48d8-4589-85d9-072d63d3bdce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/contracts/CarbonCalculation.sol" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contracts/CarbonCreditToken.sol" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contracts/ProjectRegistry.sol" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contracts/FactoryProxy.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/CarbonCalculation.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/FactoryImplementation.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/CarbonCreditToken.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/ProjectImplementation.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/ProjectRegistry.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/MainManager.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hardhat.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/hardhat.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,23 +26,28 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="learning_hardhat" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "DeStefaniAndrei"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;DeStefaniAndrei&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/DeStefaniAndrei/CarbonLink.git",
-    "accountId": "00c82e43-c428-4d4b-b493-6cae4c1dfeb7"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/DeStefaniAndrei/CarbonLink.git&quot;,
+    &quot;accountId&quot;: &quot;00c82e43-c428-4d4b-b493-6cae4c1dfeb7&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2yrpRCVBUH5of1KUFbTJjfy2sZt" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -52,7 +61,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "smart-contracts-v1",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
