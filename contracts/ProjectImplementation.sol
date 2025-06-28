@@ -1,13 +1,31 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.10;
 
-import {FunctionsClient} from "@chainlink/contracts/src/v0.8/functions/v1_0_0/FunctionsClient.sol";
-import {FunctionsRequest} from "@chainlink/contracts/src/v0.8/functions/v1_0_0/libraries/FunctionsRequest.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol";
+import {FunctionsRequest} from "@chainlink/contracts/src/v0.8/functions/v1_0_0/libraries/FunctionsRequest.sol";
 
-contract FactoryImplementation is Initializable, ERC20Upgradeable, OwnableUpgradeable, FunctionsClient {
+interface IFunctionsRouter {
+    function sendRequest(
+        uint64 subscriptionId,
+        bytes calldata data,
+        uint16 dataVersion,
+        uint32 callbackGasLimit,
+        bytes32 donId
+    ) external returns (bytes32);
+}
+
+contract ProjectImplementation is Initializable, ERC20Upgradeable, OwnableUpgradeable {
+
+    using FunctionsRequest for FunctionsRequest.Request;
+    // Chainlink Functions configuration
+    address public functionsRouter;
+    uint64 public subscriptionId;
+    bytes32 public donId;
+    string public source;
+    mapping(bytes32 => bool) public pendingRequests;
+
     // Project state
     uint256 public projectId;
     string public landDetails;
@@ -19,18 +37,13 @@ contract FactoryImplementation is Initializable, ERC20Upgradeable, OwnableUpgrad
     uint256 public bufferCredits;
     uint256 public totalCreditsIssued;
 
-    // Chainlink Functions configuration
-    bytes32 public donId;
-    uint64 public subscriptionId;
-    string public source;
-    mapping(bytes32 => bool) public pendingRequests;
-
     event CarbonDataRequested(bytes32 indexed requestId);
     event CreditsIssued(uint256 tradableAmount, uint256 bufferAmount);
     event BufferUsed(uint256 amount);
 
-    // Custom initializer since we can't use constructors in upgradeable contracts [4]
+    // Initializer
     function initialize(
+        address _functionsRouter,
         uint256 _projectId,
         address _projectOwner,
         string memory _landDetails,
@@ -40,13 +53,13 @@ contract FactoryImplementation is Initializable, ERC20Upgradeable, OwnableUpgrad
             string(abi.encodePacked("CarbonLink", _projectId)),
             string(abi.encodePacked("CL", _projectId))
         );
-        __Ownable_init();
-        FunctionsClient.__FunctionsClient_init(0xb83E47C2bC239B3bf370bc41e1459A34b41238D0); // Sepolia router
+        __Ownable_init(_projectOwner);
 
         projectId = _projectId;
         projectOwner = _projectOwner;
         landDetails = _landDetails;
         startDate = _startDate;
+        functionsRouter = _functionsRouter;
     }
 
     function setChainlinkConfig(
@@ -70,10 +83,12 @@ contract FactoryImplementation is Initializable, ERC20Upgradeable, OwnableUpgrad
         args[0] = landDetails;
         req.setArgs(args);
 
-        bytes32 requestId = _sendRequest(
-            req.encodeCBOR(),
+        // Call router directly
+        bytes32 requestId = IFunctionsRouter(functionsRouter).sendRequest(
             subscriptionId,
-            300000,
+            req.encodeCBOR(),
+            1, // dataVersion, set as needed
+            300000, // callbackGasLimit
             donId
         );
 
@@ -81,11 +96,13 @@ contract FactoryImplementation is Initializable, ERC20Upgradeable, OwnableUpgrad
         emit CarbonDataRequested(requestId);
     }
 
+    // This function must be called by the router (use onlyRouter modifier in production)
     function fulfillRequest(
         bytes32 requestId,
         bytes memory response,
         bytes memory err
-    ) internal override {
+    ) public {
+        require(msg.sender == functionsRouter, "Only router can fulfill");
         require(pendingRequests[requestId], "Invalid request");
         delete pendingRequests[requestId];
 
@@ -114,5 +131,4 @@ contract FactoryImplementation is Initializable, ERC20Upgradeable, OwnableUpgrad
         bufferCredits -= amount;
         emit BufferUsed(amount);
     }
-
 }

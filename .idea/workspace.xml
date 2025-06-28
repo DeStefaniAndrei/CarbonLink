@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2144462d-48d8-4589-85d9-072d63d3bdce" name="Changes" comment="initial folder structure">
-      <change afterPath="$PROJECT_DIR$/scripts/deploy-upgradeable-factory.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/upgrade-project.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/cahinlink-functions-test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/FactoryImplementation.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/FactoryImplementation.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/MainManager.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/MainManager.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/ProjectImplementation.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/ProjectImplementation.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hardhat.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/hardhat.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +29,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="learning_hardhat" />
+        <entry key="$PROJECT_DIR$" value="smart-contracts-v1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -58,13 +62,14 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "smart-contracts-v1",
+    "git-widget-placeholder": "front-end-v1",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.nodejs",
     "ts.external.directory.path": "C:\\Users\\deste\\AppData\\Local\\Programs\\IntelliJ IDEA Ultimate\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
@@ -94,7 +99,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750786143464</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="initial folder structure">
+      <option name="closed" value="true" />
+      <created>1750787241730</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1750787241730</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,5 +116,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial folder structure" />
     <option name="LAST_COMMIT_MESSAGE" value="initial folder structure" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

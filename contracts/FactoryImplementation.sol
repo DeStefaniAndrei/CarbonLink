@@ -13,7 +13,7 @@ contract FactoryImplementation is Initializable, OwnableUpgradeable {
     event ProjectCreated(uint256 indexed projectId, address indexed projectContract, address indexed owner);
 
     function initialize(address _beacon) public initializer {
-        __Ownable_init();
+        __Ownable_init(msg.sender);
         beacon = _beacon;
     }
 

@@ -25,7 +25,7 @@ contract MainManager is Initializable, OwnableUpgradeable {
         address _factory,
         address _beacon
     ) public initializer {
-        __Ownable_init();
+        __Ownable_init(msg.sender);
         factory = ICarbonProjectFactory(_factory);
         beacon = UpgradeableBeacon(_beacon);
 
