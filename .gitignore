@@ -19,6 +19,11 @@ yarn-error.log*
 # env files
 .env*
 
+# credentials and sensitive files
+credentials.json
+*.key
+*.pem
+
 # vercel
 .vercel
 
