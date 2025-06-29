@@ -9,39 +9,39 @@ async function main() {
 
     // Deploy beacon with project implementation
     const beacon = await upgrades.deployBeacon(CarbonProject);
-    await beacon.waitForDeployment();
-    console.log("Beacon deployed to:", await beacon.getAddress());
+    await beacon.deployed();
+    console.log("Beacon deployed to:", beacon.address);
 
     // Deploy factory implementation
     const Factory = await ethers.getContractFactory("FactoryImplementation");
     console.log("Deploying factory...");
 
-    const factory = await upgrades.deployProxy(Factory, [await beacon.getAddress()], {
+    const factory = await upgrades.deployProxy(Factory, [beacon.address], {
         initializer: "initialize"
     });
-    await factory.waitForDeployment();
-    console.log("Factory deployed to:", await factory.getAddress());
+    await factory.deployed();
+    console.log("Factory deployed to:", factory.address);
 
     // Deploy manager
     const Manager = await ethers.getContractFactory("MainManager");
     const manager = await upgrades.deployProxy(Manager, [
-        await factory.getAddress(),
-        await beacon.getAddress()
+        factory.address,
+        beacon.address
     ], {
         initializer: "initialize"
     });
-    await manager.waitForDeployment();
-    console.log("Manager deployed to:", await manager.getAddress());
+    await manager.deployed();
+    console.log("Manager deployed to:", manager.address);
 
     console.log("\n✅ Deployment Summary:");
-    console.log("Beacon:", await beacon.getAddress());
-    console.log("Factory:", await factory.getAddress());
-    console.log("Manager:", await manager.getAddress());
+    console.log("Beacon:", beacon.address);
+    console.log("Factory:", factory.address);
+    console.log("Manager:", manager.address);
 
     return {
-        beacon: await beacon.getAddress(),
-        factory: await factory.getAddress(),
-        manager: await manager.getAddress()
+        beacon: beacon.address,
+        factory: factory.address,
+        manager: manager.address
     };
 }
 

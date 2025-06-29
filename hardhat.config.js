@@ -1,33 +1,34 @@
-require("@nomicfoundation/hardhat-toolbox");
+require("@nomiclabs/hardhat-ethers");
+require("@nomicfoundation/hardhat-chai-matchers");
+require("@nomicfoundation/hardhat-verify");
 require("@openzeppelin/hardhat-upgrades");
-require("@chainlink/hardhat-chainlink");
 require("dotenv").config();
 
+/** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
     solidity: {
-        compilers: [
-            {
-                version: "0.8.10",
-                settings: { optimizer: { enabled: true, runs: 200 } }
+        version: "0.8.22",
+        settings: {
+            optimizer: {
+                enabled: true,
+                runs: 200,
             },
-            {
-                version: "0.8.19",
-                settings: { optimizer: { enabled: true, runs: 200 } }
-            },
-            {
-                version: "0.8.20",
-                settings: { optimizer: { enabled: true, runs: 200 } }
-            },
-            {
-                version: "0.8.22",
-                settings: { optimizer: { enabled: true, runs: 200 } }
-            }
-        ]
+        },
     },
     networks: {
         sepolia: {
             url: process.env.SEPOLIA_RPC_URL,
-            accounts: [process.env.PRIVATE_KEY]
-        }
-    }
+            accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
+        },
+        hardhat: {
+            chainId: 1337,
+        },
+    },
+    etherscan: {
+        apiKey: process.env.ETHERSCAN_API_KEY,
+    },
+    gasReporter: {
+        enabled: process.env.REPORT_GAS !== undefined,
+        currency: "USD",
+    },
 };
