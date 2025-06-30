@@ -1,0 +1,62 @@
+{
+  "success": true,
+  "status": 200,
+  "headers": {
+    "date": "Sun, 29 Jun 2025 20:17:44 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "488",
+    "connection": "keep-alive",
+    "x-cache-key": "/data/2.5/weather?lat=25.76&lon=-0.19&units=metric",
+    "access-control-allow-origin": "*",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-methods": "GET, POST"
+  },
+  "data": {
+    "coord": {
+      "lon": -0.1918,
+      "lat": 25.7617
+    },
+    "weather": [
+      {
+        "id": 800,
+        "main": "Clear",
+        "description": "clear sky",
+        "icon": "01n"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 35.74,
+      "feels_like": 33.04,
+      "temp_min": 35.74,
+      "temp_max": 35.74,
+      "pressure": 1010,
+      "humidity": 11,
+      "sea_level": 1010,
+      "grnd_level": 981
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 5.8,
+      "deg": 47,
+      "gust": 11.11
+    },
+    "clouds": {
+      "all": 0
+    },
+    "dt": 1751228264,
+    "sys": {
+      "country": "DZ",
+      "sunrise": 1751173933,
+      "sunset": 1751223361
+    },
+    "timezone": 3600,
+    "id": 2508807,
+    "name": "Adrar",
+    "cod": 200
+  },
+  "request": {
+    "url": "https://api.openweathermap.org/data/2.5/weather?lat=25.7617&lon=-0.1918&appid=4eccceb29863b8a833668c6125aeb267&units=metric",
+    "method": "GET"
+  }
+}

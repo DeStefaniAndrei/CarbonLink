@@ -1,0 +1,63 @@
+{
+  "success": true,
+  "status": 200,
+  "headers": {
+    "date": "Sun, 29 Jun 2025 20:17:48 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "513",
+    "connection": "keep-alive",
+    "x-cache-key": "/data/2.5/weather?lat=64.83&lon=-147.64&units=metric",
+    "access-control-allow-origin": "*",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-methods": "GET, POST"
+  },
+  "data": {
+    "coord": {
+      "lon": -147.6444,
+      "lat": 64.8255
+    },
+    "weather": [
+      {
+        "id": 802,
+        "main": "Clouds",
+        "description": "scattered clouds",
+        "icon": "03d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 21.93,
+      "feels_like": 21.61,
+      "temp_min": 21.17,
+      "temp_max": 22.01,
+      "pressure": 1013,
+      "humidity": 55,
+      "sea_level": 1013,
+      "grnd_level": 997
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 4.12,
+      "deg": 240
+    },
+    "clouds": {
+      "all": 40
+    },
+    "dt": 1751228268,
+    "sys": {
+      "type": 1,
+      "id": 7684,
+      "country": "US",
+      "sunrise": 1751195261,
+      "sunset": 1751272820
+    },
+    "timezone": -28800,
+    "id": 5861897,
+    "name": "Fairbanks",
+    "cod": 200
+  },
+  "request": {
+    "url": "https://api.openweathermap.org/data/2.5/weather?lat=64.8255&lon=-147.6444&appid=4eccceb29863b8a833668c6125aeb267&units=metric",
+    "method": "GET"
+  }
+}

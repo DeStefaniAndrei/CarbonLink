@@ -1,0 +1,300 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"2144462d-48d8-4589-85d9-072d63d3bdce\" name=\"Changes\" comment=\"initial folder structure\">\r\n      <change afterPath=\"$PROJECT_DIR$/scripts/deploy-upgradeable-factory.js\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/scripts/upgrade-project.js\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Solidity Contract\" />\r\n        <option value=\"JavaScript File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"learning_hardhat\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;DeStefaniAndrei&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/DeStefaniAndrei/CarbonLink.git&quot;,\r\n    &quot;accountId&quot;: &quot;00c82e43-c428-4d4b-b493-6cae4c1dfeb7&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 5\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2yrpRCVBUH5of1KUFbTJjfy2sZt\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"ModuleVcsDetector.initialDetectionPerformed\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"git-widget-placeholder\": \"smart-contracts-v1\",\r\n    \"ignore.virus.scanning.warn.message\": \"true\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"ts.external.directory.path\": \"C:\\\\Users\\\\deste\\\\AppData\\\\Local\\\\Programs\\\\IntelliJ IDEA Ultimate\\\\plugins\\\\javascript-plugin\\\\jsLanguageServicesImpl\\\\external\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129\" />\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"2144462d-48d8-4589-85d9-072d63d3bdce\" name=\"Changes\" comment=\"\" />\r\n      <created>1750602535595</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1750602535595</updated>\r\n      <workItem from=\"1750602536725\" duration=\"2403000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"initial folder structure\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1750786143463</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1750786143464</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"initial folder structure\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"initial folder structure\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision b5a4350697dad553a544524d4aa171e162a9850f)
++++ b/.idea/workspace.xml	(date 1751123057985)
+@@ -5,8 +5,11 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="2144462d-48d8-4589-85d9-072d63d3bdce" name="Changes" comment="initial folder structure">
+-      <change afterPath="$PROJECT_DIR$/scripts/deploy-upgradeable-factory.js" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/scripts/upgrade-project.js" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/components.json" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/lib/utils.ts" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/my-app/public/index.html" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/styles/global.css" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -25,7 +28,7 @@
+   <component name="Git.Settings">
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+       <map>
+-        <entry key="$PROJECT_DIR$" value="learning_hardhat" />
++        <entry key="$PROJECT_DIR$" value="smart-contracts-v1" />
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+@@ -58,13 +61,14 @@
+     "ModuleVcsDetector.initialDetectionPerformed": "true",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "RunOnceActivity.git.unshallow": "true",
+-    "git-widget-placeholder": "smart-contracts-v1",
++    "git-widget-placeholder": "front-end-v2",
+     "ignore.virus.scanning.warn.message": "true",
+     "node.js.detected.package.eslint": "true",
+     "node.js.detected.package.tslint": "true",
+     "node.js.selected.package.eslint": "(autodetect)",
+     "node.js.selected.package.tslint": "(autodetect)",
+     "nodejs_package_manager_path": "npm",
++    "settings.editor.selected.configurable": "settings.nodejs",
+     "ts.external.directory.path": "C:\\Users\\deste\\AppData\\Local\\Programs\\IntelliJ IDEA Ultimate\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+     "vue.rearranger.settings.migration": "true"
+   }
+@@ -94,7 +98,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1750786143464</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="initial folder structure">
++      <option name="closed" value="true" />
++      <created>1750787241730</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1750787241730</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -104,4 +116,8 @@
+     <MESSAGE value="initial folder structure" />
+     <option name="LAST_COMMIT_MESSAGE" value="initial folder structure" />
+   </component>
++  <component name="XSLT-Support.FileAssociations.UIState">
++    <expand />
++    <select />
++  </component>
+ </project>
+\ No newline at end of file
+Index: my-app/public/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/my-app/public/index.html b/my-app/public/index.html
+new file mode 100644
+--- /dev/null	(date 1751122845456)
++++ b/my-app/public/index.html	(date 1751122845456)
+@@ -0,0 +1,11 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8" />
++    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <title>React App</title>
++</head>
++<body>
++<div id="root"></div>
++</body>
++</html>
+\ No newline at end of file
+Index: src/styles/global.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/styles/global.css b/src/styles/global.css
+new file mode 100644
+--- /dev/null	(date 1751122845470)
++++ b/src/styles/global.css	(date 1751122845470)
+@@ -0,0 +1,123 @@
++@import "tailwindcss";
++@import "tw-animate-css";
++
++@custom-variant dark (&:is(.dark *));
++
++:root {
++    --background: oklch(1 0 0);
++    --foreground: oklch(0.145 0 0);
++    --card: oklch(1 0 0);
++    --card-foreground: oklch(0.145 0 0);
++    --popover: oklch(1 0 0);
++    --popover-foreground: oklch(0.145 0 0);
++    --primary: oklch(0.205 0 0);
++    --primary-foreground: oklch(0.985 0 0);
++    --secondary: oklch(0.97 0 0);
++    --secondary-foreground: oklch(0.205 0 0);
++    --muted: oklch(0.97 0 0);
++    --muted-foreground: oklch(0.556 0 0);
++    --accent: oklch(0.97 0 0);
++    --accent-foreground: oklch(0.205 0 0);
++    --destructive: oklch(0.577 0.245 27.325);
++    --destructive-foreground: oklch(0.577 0.245 27.325);
++    --border: oklch(0.922 0 0);
++    --input: oklch(0.922 0 0);
++    --ring: oklch(0.708 0 0);
++    --chart-1: oklch(0.646 0.222 41.116);
++    --chart-2: oklch(0.6 0.118 184.704);
++    --chart-3: oklch(0.398 0.07 227.392);
++    --chart-4: oklch(0.828 0.189 84.429);
++    --chart-5: oklch(0.769 0.188 70.08);
++    --radius: 0.625rem;
++    --sidebar: oklch(0.985 0 0);
++    --sidebar-foreground: oklch(0.145 0 0);
++    --sidebar-primary: oklch(0.205 0 0);
++    --sidebar-primary-foreground: oklch(0.985 0 0);
++    --sidebar-accent: oklch(0.97 0 0);
++    --sidebar-accent-foreground: oklch(0.205 0 0);
++    --sidebar-border: oklch(0.922 0 0);
++    --sidebar-ring: oklch(0.708 0 0);
++}
++
++.dark {
++    --background: oklch(0.145 0 0);
++    --foreground: oklch(0.985 0 0);
++    --card: oklch(0.145 0 0);
++    --card-foreground: oklch(0.985 0 0);
++    --popover: oklch(0.145 0 0);
++    --popover-foreground: oklch(0.985 0 0);
++    --primary: oklch(0.985 0 0);
++    --primary-foreground: oklch(0.205 0 0);
++    --secondary: oklch(0.269 0 0);
++    --secondary-foreground: oklch(0.985 0 0);
++    --muted: oklch(0.269 0 0);
++    --muted-foreground: oklch(0.708 0 0);
++    --accent: oklch(0.269 0 0);
++    --accent-foreground: oklch(0.985 0 0);
++    --destructive: oklch(0.396 0.141 25.723);
++    --destructive-foreground: oklch(0.637 0.237 25.331);
++    --border: oklch(0.269 0 0);
++    --input: oklch(0.269 0 0);
++    --ring: oklch(0.439 0 0);
++    --chart-1: oklch(0.488 0.243 264.376);
++    --chart-2: oklch(0.696 0.17 162.48);
++    --chart-3: oklch(0.769 0.188 70.08);
++    --chart-4: oklch(0.627 0.265 303.9);
++    --chart-5: oklch(0.645 0.246 16.439);
++    --sidebar: oklch(0.205 0 0);
++    --sidebar-foreground: oklch(0.985 0 0);
++    --sidebar-primary: oklch(0.488 0.243 264.376);
++    --sidebar-primary-foreground: oklch(0.985 0 0);
++    --sidebar-accent: oklch(0.269 0 0);
++    --sidebar-accent-foreground: oklch(0.985 0 0);
++    --sidebar-border: oklch(0.269 0 0);
++    --sidebar-ring: oklch(0.439 0 0);
++}
++
++@theme inline {
++    --color-background: var(--background);
++    --color-foreground: var(--foreground);
++    --color-card: var(--card);
++    --color-card-foreground: var(--card-foreground);
++    --color-popover: var(--popover);
++    --color-popover-foreground: var(--popover-foreground);
++    --color-primary: var(--primary);
++    --color-primary-foreground: var(--primary-foreground);
++    --color-secondary: var(--secondary);
++    --color-secondary-foreground: var(--secondary-foreground);
++    --color-muted: var(--muted);
++    --color-muted-foreground: var(--muted-foreground);
++    --color-accent: var(--accent);
++    --color-accent-foreground: var(--accent-foreground);
++    --color-destructive: var(--destructive);
++    --color-destructive-foreground: var(--destructive-foreground);
++    --color-border: var(--border);
++    --color-input: var(--input);
++    --color-ring: var(--ring);
++    --color-chart-1: var(--chart-1);
++    --color-chart-2: var(--chart-2);
++    --color-chart-3: var(--chart-3);
++    --color-chart-4: var(--chart-4);
++    --color-chart-5: var(--chart-5);
++    --radius-sm: calc(var(--radius) - 4px);
++    --radius-md: calc(var(--radius) - 2px);
++    --radius-lg: var(--radius);
++    --radius-xl: calc(var(--radius) + 4px);
++    --color-sidebar: var(--sidebar);
++    --color-sidebar-foreground: var(--sidebar-foreground);
++    --color-sidebar-primary: var(--sidebar-primary);
++    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
++    --color-sidebar-accent: var(--sidebar-accent);
++    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
++    --color-sidebar-border: var(--sidebar-border);
++    --color-sidebar-ring: var(--sidebar-ring);
++}
++
++@layer base {
++    * {
++        @apply border-border outline-ring/50;
++    }
++    body {
++        @apply bg-background text-foreground;
++    }
++}
+\ No newline at end of file
+Index: components.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/components.json b/components.json
+new file mode 100644
+--- /dev/null	(date 1751122845490)
++++ b/components.json	(date 1751122845490)
+@@ -0,0 +1,21 @@
++{
++  "$schema": "https://ui.shadcn.com/schema.json",
++  "style": "new-york",
++  "rsc": false,
++  "tsx": true,
++  "tailwind": {
++    "config": "",
++    "css": "src/styles/globals.css",
++    "baseColor": "neutral",
++    "cssVariables": true,
++    "prefix": ""
++  },
++  "aliases": {
++    "components": "@/components",
++    "utils": "@/lib/utils",
++    "ui": "@/components/ui",
++    "lib": "@/lib",
++    "hooks": "@/hooks"
++  },
++  "iconLibrary": "lucide"
++}
+\ No newline at end of file
+Index: tsconfig.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/tsconfig.json b/tsconfig.json
+new file mode 100644
+--- /dev/null	(date 1751122845499)
++++ b/tsconfig.json	(date 1751122845499)
+@@ -0,0 +1,8 @@
++{
++  "compilerOptions": {
++    "baseUrl": ".",
++    "paths": {
++      "@/*": ["./*"]
++    }
++  }
++}
+\ No newline at end of file
+Index: lib/utils.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lib/utils.ts b/lib/utils.ts
+new file mode 100644
+--- /dev/null	(date 1751122845463)
++++ b/lib/utils.ts	(date 1751122845463)
+@@ -0,0 +1,6 @@
++import { clsx, type ClassValue } from "clsx"
++import { twMerge } from "tailwind-merge"
++
++export function cn(...inputs: ClassValue[]) {
++    return twMerge(clsx(inputs))
++}
+\ No newline at end of file

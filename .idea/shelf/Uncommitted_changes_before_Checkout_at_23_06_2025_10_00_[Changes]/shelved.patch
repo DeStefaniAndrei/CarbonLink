@@ -1,0 +1,136 @@
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># Default ignored files\r\n/shelf/\r\n/workspace.xml\r\n# Editor-based HTTP Client requests\r\n/httpRequests/\r\n# Environment-dependent path to Maven home directory\r\n/mavenHomeManager.xml\r\n# Datasource local storage ignored files\r\n/dataSources/\r\n/dataSources.local.xml\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.gitignore b/.gitignore
+--- a/.gitignore	(revision 4b95c4a8c13adac1d17ab8d15ece79c1c496e446)
++++ b/.gitignore	(date 1750669140760)
+@@ -8,3 +8,4 @@
+ # Datasource local storage ignored files
+ /dataSources/
+ /dataSources.local.xml
++.env
+\ No newline at end of file
+Index: contracts/CarbonCreditToken.sol
+===================================================================
+diff --git a/contracts/CarbonCreditToken.sol b/contracts/CarbonCreditToken.sol
+deleted file mode 100644
+--- a/contracts/CarbonCreditToken.sol	(revision 4b95c4a8c13adac1d17ab8d15ece79c1c496e446)
++++ /dev/null	(revision 4b95c4a8c13adac1d17ab8d15ece79c1c496e446)
+@@ -1,8 +0,0 @@
+-// SPDX-License-Identifier: UNLICENSED
+-pragma solidity ^0.8.10;
+-
+-contract CarbonCreditToken {
+-    constructor(){
+-
+-    }
+-}
+Index: contracts/ProjectRegistry.sol
+===================================================================
+diff --git a/contracts/ProjectRegistry.sol b/contracts/ProjectRegistry.sol
+deleted file mode 100644
+--- a/contracts/ProjectRegistry.sol	(revision 4b95c4a8c13adac1d17ab8d15ece79c1c496e446)
++++ /dev/null	(revision 4b95c4a8c13adac1d17ab8d15ece79c1c496e446)
+@@ -1,8 +0,0 @@
+-// SPDX-License-Identifier: UNLICENSED
+-pragma solidity ^0.8.10;
+-
+-contract ProjectRegistry {
+-    constructor(){
+-
+-    }
+-}
+Index: contracts/CarbonCalculation.sol
+===================================================================
+diff --git a/contracts/CarbonCalculation.sol b/contracts/CarbonCalculation.sol
+deleted file mode 100644
+--- a/contracts/CarbonCalculation.sol	(revision 4b95c4a8c13adac1d17ab8d15ece79c1c496e446)
++++ /dev/null	(revision 4b95c4a8c13adac1d17ab8d15ece79c1c496e446)
+@@ -1,8 +0,0 @@
+-// SPDX-License-Identifier: UNLICENSED
+-pragma solidity ^0.8.10;
+-
+-contract CarbonCalculation {
+-    constructor(){
+-
+-    }
+-}
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"2144462d-48d8-4589-85d9-072d63d3bdce\" name=\"Changes\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/contracts/CarbonCalculation.sol\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/contracts/CarbonCreditToken.sol\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/contracts/ProjectRegistry.sol\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Solidity Contract\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\"><![CDATA[{\r\n  \"lastFilter\": {\r\n    \"state\": \"OPEN\",\r\n    \"assignee\": \"DeStefaniAndrei\"\r\n  }\r\n}]]></component>\r\n  <component name=\"GithubPullRequestsUISettings\"><![CDATA[{\r\n  \"selectedUrlAndAccountId\": {\r\n    \"url\": \"https://github.com/DeStefaniAndrei/CarbonLink.git\",\r\n    \"accountId\": \"00c82e43-c428-4d4b-b493-6cae4c1dfeb7\"\r\n  }\r\n}]]></component>\r\n  <component name=\"ProjectColorInfo\"><![CDATA[{\r\n  \"associatedIndex\": 5\r\n}]]></component>\r\n  <component name=\"ProjectId\" id=\"2yrpRCVBUH5of1KUFbTJjfy2sZt\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"ModuleVcsDetector.initialDetectionPerformed\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"git-widget-placeholder\": \"main\",\r\n    \"ignore.virus.scanning.warn.message\": \"true\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129\" />\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"2144462d-48d8-4589-85d9-072d63d3bdce\" name=\"Changes\" comment=\"\" />\r\n      <created>1750602535595</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1750602535595</updated>\r\n      <workItem from=\"1750602536725\" duration=\"2403000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 4b95c4a8c13adac1d17ab8d15ece79c1c496e446)
++++ b/.idea/workspace.xml	(date 1750669049878)
+@@ -5,9 +5,10 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="2144462d-48d8-4589-85d9-072d63d3bdce" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/contracts/CarbonCalculation.sol" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/contracts/CarbonCreditToken.sol" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/contracts/ProjectRegistry.sol" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/contracts/CarbonCalculation.sol" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/contracts/CarbonCreditToken.sol" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/contracts/ProjectRegistry.sol" beforeDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -22,23 +23,28 @@
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="learning_hardhat" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+-  "lastFilter": {
+-    "state": "OPEN",
+-    "assignee": "DeStefaniAndrei"
++  <component name="GitHubPullRequestSearchHistory">{
++  &quot;lastFilter&quot;: {
++    &quot;state&quot;: &quot;OPEN&quot;,
++    &quot;assignee&quot;: &quot;DeStefaniAndrei&quot;
+   }
+-}]]></component>
+-  <component name="GithubPullRequestsUISettings"><![CDATA[{
+-  "selectedUrlAndAccountId": {
+-    "url": "https://github.com/DeStefaniAndrei/CarbonLink.git",
+-    "accountId": "00c82e43-c428-4d4b-b493-6cae4c1dfeb7"
++}</component>
++  <component name="GithubPullRequestsUISettings">{
++  &quot;selectedUrlAndAccountId&quot;: {
++    &quot;url&quot;: &quot;https://github.com/DeStefaniAndrei/CarbonLink.git&quot;,
++    &quot;accountId&quot;: &quot;00c82e43-c428-4d4b-b493-6cae4c1dfeb7&quot;
+   }
+-}]]></component>
+-  <component name="ProjectColorInfo"><![CDATA[{
+-  "associatedIndex": 5
+-}]]></component>
++}</component>
++  <component name="ProjectColorInfo">{
++  &quot;associatedIndex&quot;: 5
++}</component>
+   <component name="ProjectId" id="2yrpRCVBUH5of1KUFbTJjfy2sZt" />
+   <component name="ProjectLevelVcsManager">
+     <ConfirmationsSetting value="2" id="Add" />
+@@ -52,7 +58,7 @@
+     "ModuleVcsDetector.initialDetectionPerformed": "true",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "RunOnceActivity.git.unshallow": "true",
+-    "git-widget-placeholder": "main",
++    "git-widget-placeholder": "smart-contracts-v1",
+     "ignore.virus.scanning.warn.message": "true",
+     "node.js.detected.package.eslint": "true",
+     "node.js.detected.package.tslint": "true",

@@ -1,0 +1,177 @@
+{
+  "timestamp": "2025-06-29T15:20:15.855Z",
+  "request": {
+    "url": "https://services.sentinel-hub.com/api/v1/statistics",
+    "method": "POST",
+    "headers": {
+      "Authorization": "Bearer [REDACTED]",
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "input": {
+        "bounds": {
+          "bbox": [
+            -58.3851,
+            -3.4703,
+            -58.375099999999996,
+            -3.4603
+          ],
+          "properties": {
+            "crs": "http://www.opengis.net/def/crs/OGC/1.3/CRS84"
+          }
+        },
+        "data": [
+          {
+            "type": "sentinel-2-l2a",
+            "dataFilter": {
+              "mosaickingOrder": "leastCC"
+            }
+          }
+        ]
+      },
+      "aggregation": {
+        "timeRange": {
+          "from": "2024-06-01T00:00:00Z",
+          "to": "2024-06-30T23:59:59Z"
+        },
+        "aggregationInterval": {
+          "of": "P1D"
+        },
+        "resx": 10,
+        "resy": 10,
+        "evalscript": "\n          //VERSION=3\n          function setup() {\n            return {\n              input: [{ bands: [\"B04\", \"B08\", \"dataMask\"] }],\n              output: [\n                { id: \"ndvi\", bands: 1, sampleType: \"FLOAT32\" },\n                { id: \"dataMask\", bands: 1 }\n              ]\n            };\n          }\n          function evaluatePixel(samples) {\n            let ndvi = (samples.B08 - samples.B04) / (samples.B08 + samples.B04);\n            return {\n              ndvi: [ndvi],\n              dataMask: [samples.dataMask]\n            };\n          }\n        "
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "statusText": "OK",
+    "headers": {
+      "date": "Sun, 29 Jun 2025 15:20:16 GMT",
+      "content-type": "application/json;charset=utf-8",
+      "content-length": "1187",
+      "connection": "keep-alive",
+      "access-control-allow-origin": "*",
+      "access-control-allow-headers": "origin,content-type,accept,accept-crs,authorization,cache-control",
+      "access-control-allow-credentials": "true",
+      "access-control-allow-methods": "GET, POST, PUT, DELETE, OPTIONS, HEAD, PATCH",
+      "access-control-max-age": "3600",
+      "x-processingunits-spent": "0.06666666865348816"
+    },
+    "data": {
+      "data": [
+        {
+          "interval": {
+            "from": "2024-06-05T00:00:00Z",
+            "to": "2024-06-06T00:00:00Z"
+          },
+          "outputs": {
+            "ndvi": {
+              "bands": {
+                "B0": {
+                  "stats": {
+                    "min": 0.6626148819923401,
+                    "max": 0.6626148819923401,
+                    "mean": 0.6626148819923401,
+                    "stDev": 0,
+                    "sampleCount": 1,
+                    "noDataCount": 0
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "interval": {
+            "from": "2024-06-10T00:00:00Z",
+            "to": "2024-06-11T00:00:00Z"
+          },
+          "outputs": {
+            "ndvi": {
+              "bands": {
+                "B0": {
+                  "stats": {
+                    "min": 1,
+                    "max": 1,
+                    "mean": 1,
+                    "stDev": 0,
+                    "sampleCount": 1,
+                    "noDataCount": 0
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "interval": {
+            "from": "2024-06-15T00:00:00Z",
+            "to": "2024-06-16T00:00:00Z"
+          },
+          "outputs": {
+            "ndvi": {
+              "bands": {
+                "B0": {
+                  "stats": {
+                    "min": 0.19528242945671082,
+                    "max": 0.19528242945671082,
+                    "mean": 0.19528242945671082,
+                    "stDev": 0,
+                    "sampleCount": 1,
+                    "noDataCount": 0
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "interval": {
+            "from": "2024-06-20T00:00:00Z",
+            "to": "2024-06-21T00:00:00Z"
+          },
+          "outputs": {
+            "ndvi": {
+              "bands": {
+                "B0": {
+                  "stats": {
+                    "min": 0.7667185068130493,
+                    "max": 0.7667185068130493,
+                    "mean": 0.7667185068130493,
+                    "stDev": 0,
+                    "sampleCount": 1,
+                    "noDataCount": 0
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "interval": {
+            "from": "2024-06-25T00:00:00Z",
+            "to": "2024-06-26T00:00:00Z"
+          },
+          "outputs": {
+            "ndvi": {
+              "bands": {
+                "B0": {
+                  "stats": {
+                    "min": 0.6605871319770813,
+                    "max": 0.6605871319770813,
+                    "mean": 0.6605871319770813,
+                    "stDev": 0,
+                    "sampleCount": 1,
+                    "noDataCount": 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "status": "OK"
+    }
+  }
+}

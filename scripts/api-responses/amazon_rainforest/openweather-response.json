@@ -1,0 +1,62 @@
+{
+  "success": true,
+  "status": 200,
+  "headers": {
+    "date": "Sun, 29 Jun 2025 20:17:40 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "506",
+    "connection": "keep-alive",
+    "x-cache-key": "/data/2.5/weather?lat=-3.47&lon=-58.38&units=metric",
+    "access-control-allow-origin": "*",
+    "access-control-allow-credentials": "true",
+    "access-control-allow-methods": "GET, POST"
+  },
+  "data": {
+    "coord": {
+      "lon": -58.3801,
+      "lat": -3.4653
+    },
+    "weather": [
+      {
+        "id": 804,
+        "main": "Clouds",
+        "description": "overcast clouds",
+        "icon": "04d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 33.33,
+      "feels_like": 35.54,
+      "temp_min": 33.33,
+      "temp_max": 33.33,
+      "pressure": 1009,
+      "humidity": 45,
+      "sea_level": 1009,
+      "grnd_level": 1006
+    },
+    "visibility": 10000,
+    "wind": {
+      "speed": 1.99,
+      "deg": 78,
+      "gust": 4.48
+    },
+    "clouds": {
+      "all": 99
+    },
+    "dt": 1751228260,
+    "sys": {
+      "country": "BR",
+      "sunrise": 1751191154,
+      "sunset": 1751234074
+    },
+    "timezone": -14400,
+    "id": 3397893,
+    "name": "Itacoatiara",
+    "cod": 200
+  },
+  "request": {
+    "url": "https://api.openweathermap.org/data/2.5/weather?lat=-3.4653&lon=-58.3801&appid=4eccceb29863b8a833668c6125aeb267&units=metric",
+    "method": "GET"
+  }
+}

@@ -1,0 +1,421 @@
+{
+  "success": true,
+  "status": 200,
+  "headers": {
+    "cache-control": "max-age=0, must-revalidate, private",
+    "content-length": "15206",
+    "content-type": "application/json",
+    "date": "Sun, 29 Jun 2025 20:17:41 GMT",
+    "etag": "\"1751228261.516809632\"",
+    "expires": "Thu, 02 Jul 2015 20:17:41 GMT",
+    "server": "waitress",
+    "via": "waitress",
+    "x-cache-operation": "plone.app.caching.terseCaching",
+    "x-cache-rule": "plone.content.dynamic",
+    "x-frame-options": "SAMEORIGIN",
+    "x-powered-by": "Zope (www.zope.dev), Python (www.python.org)",
+    "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "access-control-allow-headers": "Authorization, Content-Type, content-type",
+    "vary": "Origin"
+  },
+  "data": {
+    "@id": "https://land.copernicus.eu/api/@search?portal_type=DataSet&metadata_fields=dataset_download_information&SearchableText=soil+moisture",
+    "items": [
+      {
+        "@id": "https://land.copernicus.eu/api/en/products/soil-moisture/daily-surface-soil-moisture-v1.0",
+        "@type": "DataSet",
+        "dataset_download_information": {
+          "items": [
+            {
+              "@id": "0524bf44-6624-4e94-b88a-38af27388b31",
+              "collection": "1km",
+              "full_format": {
+                "title": "Netcdf",
+                "token": "Netcdf"
+              },
+              "full_path": "https://globalland.vito.be/download/manifest/ssm_1km_v1_daily_netcdf/manifest_clms_global_ssm_1km_v1_daily_netcdf_latest.txt",
+              "full_source": "LEGACY",
+              "layers": [
+                "ALL BANDS"
+              ],
+              "name": "RASTER",
+              "wekeo_choices": ""
+            }
+          ]
+        },
+        "description": "Provides information on the relative water content of the top few centimeters soil, describing how wet or dry the soil is in its topmost layer, expressed in percent saturation. Daily observations are available for the continental Europe in the spatial resolution of 1 km and with the temporal extent from October 2014 to present.",
+        "effective": "2021-10-29T10:21:59+00:00",
+        "getRemoteUrl": null,
+        "image_field": "image",
+        "image_scales": {
+          "image": [
+            {
+              "content-type": "image/png",
+              "download": "@@images/image-2944-aa8b26ef8d4a32c95517d0937f41e605.png",
+              "filename": "Surface Soil Moisture 2014-present (raster 1 km), Europe, daily – version 1.png",
+              "height": 2480,
+              "scales": {
+                "big": {
+                  "download": "@@images/image-80-b53fb57da73da72ea34cb8bc736ec94b.png",
+                  "height": 67,
+                  "width": 80
+                },
+                "great": {
+                  "download": "@@images/image-1200-55472c3778e1d8348f371daec7c99baa.png",
+                  "height": 1010,
+                  "width": 1200
+                },
+                "huge": {
+                  "download": "@@images/image-1920-6923b41c84afda307f6da6e399ed1a4e.png",
+                  "height": 1617,
+                  "width": 1920
+                },
+                "huge2400": {
+                  "download": "@@images/image-2400-1f6408f66673cdc5cdba0767750f4b92.png",
+                  "height": 2021,
+                  "width": 2400
+                },
+                "icon": {
+                  "download": "@@images/image-32-8cc42eb98dff4c55127b0a24e0646454.png",
+                  "height": 26,
+                  "width": 32
+                },
+                "large": {
+                  "download": "@@images/image-800-4874770ccfe595180a5cbc264af7bfb7.png",
+                  "height": 673,
+                  "width": 800
+                },
+                "larger": {
+                  "download": "@@images/image-1000-e985437fdf9af9d149a4fb9ca61f9948.png",
+                  "height": 842,
+                  "width": 1000
+                },
+                "medium": {
+                  "download": "@@images/image-60-95b33a8953ff4cd1dcce164840c82f5e.png",
+                  "height": 50,
+                  "width": 60
+                },
+                "mini": {
+                  "download": "@@images/image-200-dbe119334e8dbdd5abfa1a6f1b37b82c.png",
+                  "height": 168,
+                  "width": 200
+                },
+                "preview": {
+                  "download": "@@images/image-400-e7e658931c46b412c9137656704f00ac.png",
+                  "height": 336,
+                  "width": 400
+                },
+                "small": {
+                  "download": "@@images/image-48-8ed408788fdfc340254d377ac0eb6075.png",
+                  "height": 40,
+                  "width": 48
+                },
+                "teaser": {
+                  "download": "@@images/image-600-1b75049d078b4037f1c6926828bd11f4.png",
+                  "height": 505,
+                  "width": 600
+                },
+                "thumb": {
+                  "download": "@@images/image-128-949644290f20cba2f2c510d1e9dd1f38.png",
+                  "height": 107,
+                  "width": 128
+                },
+                "tile": {
+                  "download": "@@images/image-64-133f89c62626d61780adb9da17a678bf.png",
+                  "height": 53,
+                  "width": 64
+                },
+                "tiny": {
+                  "download": "@@images/image-24-90efe2e4d7958683e735e55ca2629812.png",
+                  "height": 20,
+                  "width": 24
+                }
+              },
+              "size": 238517,
+              "width": 2944
+            }
+          ]
+        },
+        "review_state": "published",
+        "title": "Surface Soil Moisture 2014-present (raster 1 km), Europe, daily – version 1",
+        "type_title": "DataSet"
+      },
+      {
+        "@id": "https://land.copernicus.eu/api/en/products/soil-moisture/daily-soil-water-index-europe-v1-0-1km",
+        "@type": "DataSet",
+        "dataset_download_information": {
+          "items": [
+            {
+              "@id": "341c5cd9-0a20-46f9-9aa2-9d91052ff8b9",
+              "collection": "1km",
+              "full_format": {
+                "title": "Netcdf",
+                "token": "Netcdf"
+              },
+              "full_path": "https://globalland.vito.be/download/manifest/swi_1km_v1_daily_netcdf/manifest_clms_global_swi_1km_v1_daily_netcdf_latest.txt",
+              "full_source": "LEGACY",
+              "layers": [
+                "ALL BANDS"
+              ],
+              "name": "RASTER",
+              "wekeo_choices": ""
+            }
+          ]
+        },
+        "description": "Quantifies the moisture condition at various depths in the soil. Daily observations are available for the continental Europe in the spatial resolution of 1 km and with the temporal extent from January 2015 to present.",
+        "effective": "2022-01-21T11:07:36+00:00",
+        "getRemoteUrl": null,
+        "image_field": "image",
+        "image_scales": {
+          "image": [
+            {
+              "content-type": "image/png",
+              "download": "@@images/image-400-1a6f846154e89d76ba9d36b549abcaca.png",
+              "filename": "Soil Water Index 2015-present (raster 1 km), Europe, daily – version 1.png",
+              "height": 400,
+              "scales": {
+                "big": {
+                  "download": "@@images/image-80-5537760908936b1e31bf53c4cd87d48b.png",
+                  "height": 80,
+                  "width": 80
+                },
+                "icon": {
+                  "download": "@@images/image-32-a72f0578a3c36c6b33ba30d940d5672c.png",
+                  "height": 32,
+                  "width": 32
+                },
+                "medium": {
+                  "download": "@@images/image-60-71fd4441daad9a19723269cc62e3a575.png",
+                  "height": 60,
+                  "width": 60
+                },
+                "mini": {
+                  "download": "@@images/image-200-5860df6be47180fff6f36964e3e5f0eb.png",
+                  "height": 200,
+                  "width": 200
+                },
+                "preview": {
+                  "download": "@@images/image-400-e9f71b862146726e288d8ee257995bc3.png",
+                  "height": 400,
+                  "width": 400
+                },
+                "small": {
+                  "download": "@@images/image-48-f8847d67d4a50741478f8c195b985a89.png",
+                  "height": 48,
+                  "width": 48
+                },
+                "thumb": {
+                  "download": "@@images/image-128-be5a36c67b9e42958c6d2959b36ed06d.png",
+                  "height": 128,
+                  "width": 128
+                },
+                "tile": {
+                  "download": "@@images/image-64-bc021b143d173ef7da79829d339c5855.png",
+                  "height": 64,
+                  "width": 64
+                },
+                "tiny": {
+                  "download": "@@images/image-24-a710f8dd57cf55f5d87aad0c4efc2976.png",
+                  "height": 24,
+                  "width": 24
+                }
+              },
+              "size": 243067,
+              "width": 400
+            }
+          ]
+        },
+        "review_state": "published",
+        "title": "Soil Water Index 2015-present (raster 1 km), Europe, daily – version 1",
+        "type_title": "DataSet"
+      },
+      {
+        "@id": "https://land.copernicus.eu/api/en/products/soil-moisture/daily-soil-water-index-global-v3-0-12-5km",
+        "@type": "DataSet",
+        "dataset_download_information": {
+          "items": [
+            {
+              "@id": "c6bc76a5-d8de-409e-8b6c-9e4305a5f60b",
+              "collection": "12.5km",
+              "full_format": {
+                "title": "Netcdf",
+                "token": "Netcdf"
+              },
+              "full_path": "https://globalland.vito.be/download/manifest/swi_12.5km_v3_daily_netcdf/manifest_clms_global_swi_12.5km_v3_daily_netcdf_latest.txt",
+              "full_source": "LEGACY",
+              "layers": [
+                "ALL BANDS"
+              ],
+              "name": "RASTER",
+              "wekeo_choices": ""
+            }
+          ]
+        },
+        "description": "Provides daily updates on the moisture conditions in different soil layers. The data are available over the globe at the spatial resolution of 0.1° and with the temporal extent from January 2007 to present.",
+        "effective": "2022-01-21T11:07:36+00:00",
+        "getRemoteUrl": null,
+        "image_field": "image",
+        "image_scales": {
+          "image": [
+            {
+              "content-type": "image/png",
+              "download": "@@images/image-400-7f52bf756e174f2ac6a0afcdb9d0340d.png",
+              "filename": "Soil Water Index 2007-present (raster 12.5 km), global, daily – version 3.png",
+              "height": 400,
+              "scales": {
+                "big": {
+                  "download": "@@images/image-80-b5953891f345be67a408748582c5f2f4.png",
+                  "height": 80,
+                  "width": 80
+                },
+                "icon": {
+                  "download": "@@images/image-32-5a40f697773fa98e0742b2b58aff8347.png",
+                  "height": 32,
+                  "width": 32
+                },
+                "medium": {
+                  "download": "@@images/image-60-4b987b764fc5afe1775fda049aaba67d.png",
+                  "height": 60,
+                  "width": 60
+                },
+                "mini": {
+                  "download": "@@images/image-200-e44351ab4fcbd6a91ed436736041f3ac.png",
+                  "height": 200,
+                  "width": 200
+                },
+                "preview": {
+                  "download": "@@images/image-400-9935f791e6770573fce9b0d20d839d57.png",
+                  "height": 400,
+                  "width": 400
+                },
+                "small": {
+                  "download": "@@images/image-48-90108809cf4ac10385f36e231e23f9df.png",
+                  "height": 48,
+                  "width": 48
+                },
+                "thumb": {
+                  "download": "@@images/image-128-07b8f17b3fd3e644139a9f76019a5c2b.png",
+                  "height": 128,
+                  "width": 128
+                },
+                "tile": {
+                  "download": "@@images/image-64-f9471bfaf50e9f0424fa07b021a46f21.png",
+                  "height": 64,
+                  "width": 64
+                },
+                "tiny": {
+                  "download": "@@images/image-24-cc7923eba0a9676aa7ec4d4abbc53f82.png",
+                  "height": 24,
+                  "width": 24
+                }
+              },
+              "size": 74976,
+              "width": 400
+            }
+          ]
+        },
+        "review_state": "published",
+        "title": "Soil Water Index 2007-present (raster 12.5 km), global, daily – version 3",
+        "type_title": "DataSet"
+      },
+      {
+        "@id": "https://land.copernicus.eu/api/en/products/soil-moisture/10-daily-soil-water-index-global-v3-0-12-5-km",
+        "@type": "DataSet",
+        "dataset_download_information": {
+          "items": [
+            {
+              "@id": "8ea4e7f0-06a6-4527-9850-b103226333ad",
+              "collection": "12.5km",
+              "full_format": "Netcdf",
+              "full_path": "https://globalland.vito.be/download/manifest/swi_12.5km_v3_10daily_netcdf/manifest_clms_global_swi_12.5km_v3_10daily_netcdf_latest.txt",
+              "full_source": "LEGACY",
+              "layers": [
+                "ALL BANDS"
+              ],
+              "name": "RASTER",
+              "wekeo_choices": ""
+            }
+          ]
+        },
+        "description": "Averages the daily Soil Water Index product over 10 days. The data are produced every 10 days over the globe at the spatial resolution of 0.1° and with the temporal extent from January 2007 to present.",
+        "effective": "2022-01-21T12:06:37+00:00",
+        "getRemoteUrl": null,
+        "image_field": "image",
+        "image_scales": {
+          "image": [
+            {
+              "content-type": "image/png",
+              "download": "@@images/image-400-8170a87e7ab370c2cc7a9bbc9de44816.png",
+              "filename": "Soil Water Index 2007-present (raster 12.5 km), global, 10-daily – version 3.png",
+              "height": 400,
+              "scales": {
+                "big": {
+                  "download": "@@images/image-80-9ff6854a685ab1cb2756e80a07e037c5.png",
+                  "height": 80,
+                  "width": 80
+                },
+                "icon": {
+                  "download": "@@images/image-32-3a28884875c8e3f7d83716e1650c8fee.png",
+                  "height": 32,
+                  "width": 32
+                },
+                "medium": {
+                  "download": "@@images/image-60-c9dac77ddace7a61d6004c7721fe5167.png",
+                  "height": 60,
+                  "width": 60
+                },
+                "mini": {
+                  "download": "@@images/image-200-004840218fcf913c99624db034653323.png",
+                  "height": 200,
+                  "width": 200
+                },
+                "preview": {
+                  "download": "@@images/image-400-3f7aaf04b9fcc201d9e408158ec30b96.png",
+                  "height": 400,
+                  "width": 400
+                },
+                "small": {
+                  "download": "@@images/image-48-2ae54f4ddeae6f3386c5f39b37e415f4.png",
+                  "height": 48,
+                  "width": 48
+                },
+                "thumb": {
+                  "download": "@@images/image-128-59d5010f9279a8805b149e3254d4dcb8.png",
+                  "height": 128,
+                  "width": 128
+                },
+                "tile": {
+                  "download": "@@images/image-64-9af649e3e7ef8907281ab16f25ac9d8e.png",
+                  "height": 64,
+                  "width": 64
+                },
+                "tiny": {
+                  "download": "@@images/image-24-3f966763c1a2dbf8374199110c27f288.png",
+                  "height": 24,
+                  "width": 24
+                }
+              },
+              "size": 109834,
+              "width": 400
+            }
+          ]
+        },
+        "review_state": "published",
+        "title": "Soil Water Index 2007-present (raster 12.5 km), global, 10-daily – version 3",
+        "type_title": "DataSet"
+      }
+    ],
+    "items_total": 4
+  },
+  "request": {
+    "url": "https://land.copernicus.eu/api/@search",
+    "method": "GET",
+    "params": {
+      "portal_type": "DataSet",
+      "metadata_fields": "dataset_download_information",
+      "SearchableText": "soil moisture"
+    }
+  }
+}

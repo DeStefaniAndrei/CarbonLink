@@ -1,0 +1,49 @@
+Index: hardhat.config.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>require(\"@nomicfoundation/hardhat-toolbox\");\r\nrequire(\"dotenv\").config();\r\n\r\nmodule.exports = {\r\n    solidity: {\r\n        compilers: [\r\n            {\r\n                version: \"0.8.10\",\r\n                settings: { optimizer: { enabled: true, runs: 200 } }\r\n            },\r\n            {\r\n                version: \"0.8.19\",\r\n                networks: {\r\n                    sepolia: {\r\n                        url: process.env.SEPOLIA_RPC_URL || \"\",\r\n                        accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],\r\n                    }\r\n                },\r\n                settings: { optimizer: { enabled: true, runs: 200 } }\r\n            },\r\n            {\r\n                version: \"0.8.20\",\r\n                settings: { optimizer: { enabled: true, runs: 200 } }\r\n            }\r\n        ]\r\n    },\r\n    networks: {\r\n        sepolia: {\r\n            url: process.env.SEPOLIA_RPC_URL || \"\",\r\n            accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],\r\n        }\r\n    }\r\n};
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/hardhat.config.js b/hardhat.config.js
+--- a/hardhat.config.js	(revision b0c16195ff13c164912a0fdb9581b83cdc52d86f)
++++ b/hardhat.config.js	(date 1750668596744)
+@@ -30,4 +30,37 @@
+             accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+         }
+     }
++};
++require("@nomicfoundation/hardhat-toolbox");
++require("dotenv").config();
++
++module.exports = {
++    solidity: {
++        compilers: [
++            {
++                version: "0.8.10",
++                settings: { optimizer: { enabled: true, runs: 200 } }
++            },
++            {
++                version: "0.8.19",
++                networks: {
++                    sepolia: {
++                        url: process.env.SEPOLIA_RPC_URL || "",
++                        accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
++                    }
++                },
++                settings: { optimizer: { enabled: true, runs: 200 } }
++            },
++            {
++                version: "0.8.20",
++                settings: { optimizer: { enabled: true, runs: 200 } }
++            }
++        ]
++    },
++    networks: {
++        sepolia: {
++            url: process.env.SEPOLIA_RPC_URL || "",
++            accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
++        }
++    }
+ };
+\ No newline at end of file

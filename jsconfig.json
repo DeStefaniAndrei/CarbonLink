@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@/*": ["./*"],
+        "@/pages/*": ["./components/pages/*"],
+        "@/ui/*": ["./components/ui/*"],
+        "@/providers/*": ["./components/providers/*"],
+        "@/layout/*": ["./components/layout/*"],
+        "@/theme-provider": ["./components/theme-provider.js"],
+        "@/client-providers": ["./components/client-providers.js"]
+      },
+      "jsx": "react-jsx"
+    }
+  }

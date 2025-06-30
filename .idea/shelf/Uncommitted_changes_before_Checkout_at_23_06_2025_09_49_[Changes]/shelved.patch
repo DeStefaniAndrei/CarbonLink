@@ -1,0 +1,43 @@
+Index: hardhat.config.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/hardhat.config.js b/hardhat.config.js
+--- a/hardhat.config.js	(revision 4b95c4a8c13adac1d17ab8d15ece79c1c496e446)
++++ b/hardhat.config.js	(date 1750668594632)
+@@ -1,0 +1,33 @@
++require("@nomicfoundation/hardhat-toolbox");
++require("dotenv").config();
++
++module.exports = {
++    solidity: {
++        compilers: [
++            {
++                version: "0.8.10",
++                settings: { optimizer: { enabled: true, runs: 200 } }
++            },
++            {
++                version: "0.8.19",
++                networks: {
++                    sepolia: {
++                        url: process.env.SEPOLIA_RPC_URL || "",
++                        accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
++                    }
++                },
++                settings: { optimizer: { enabled: true, runs: 200 } }
++            },
++            {
++                version: "0.8.20",
++                settings: { optimizer: { enabled: true, runs: 200 } }
++            }
++        ]
++    },
++    networks: {
++        sepolia: {
++            url: process.env.SEPOLIA_RPC_URL || "",
++            accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
++        }
++    }
++};
+\ No newline at end of file
